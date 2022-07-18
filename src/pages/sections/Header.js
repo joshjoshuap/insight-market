@@ -11,7 +11,9 @@ const Header = () => {
           <a href="#main">View Market</a>
         </button>
       </div>
-      <div className=""></div>
+      <div className="">
+        
+      </div>
 
     </header>
   );
