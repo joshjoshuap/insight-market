@@ -1,4 +1,4 @@
-import '/src/styles/main.css';
+import '../styles/main.css';
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
