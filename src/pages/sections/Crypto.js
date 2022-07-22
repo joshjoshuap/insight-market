@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CryptoTable from './CryptoTable';
+import CryptoTable from '../../components/CryptoTable';
 
 const Crypto = () => {
   const [cryptoData, setCryptoData] = useState(null);
@@ -20,9 +20,11 @@ const Crypto = () => {
     fetchData();
   }, []);
 
-  if (loading) return <h1>Loading...</h1>; // display if fetch api not available or still fetching
-
-  return <div>{<CryptoTable datas={cryptoData} />}</div>;
+  if (loading) {
+    return <h1>Loading...</h1>; // display if fetch api not available or still fetching
+  } else {
+    return <div>{<CryptoTable datas={cryptoData} />}</div>;
+  }
 };
 
 export default Crypto;
