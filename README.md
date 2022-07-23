@@ -7,3 +7,5 @@
 - ReactJS
 - NextJS
 - Tailwind CSS
+- Coinlore API
+- Crypto Icons
