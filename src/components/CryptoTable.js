@@ -36,7 +36,7 @@ const CryptoTable = (props) => {
           <th className="text-2xl font-medium w-48">Price (USD)</th>
           <th className="text-2xl text-center font-medium">24h</th>
           <th className="text-2xl text-center font-medium">7d</th>
-          <th className="text-2xl text-center text-center font-medium">Volume</th>
+          <th className="text-2xl text-center font-medium">Volume</th>
         </tr>
       </thead>
       <tbody>{coin.map(CryptoCoin)}</tbody>
