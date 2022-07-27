@@ -23,7 +23,7 @@ const Crypto = () => {
   if (loading) {
     return <h1>Loading...</h1>; // display if fetch api not available or still fetching
   } else {
-    return <div>{<CryptoTable datas={cryptoData} />}</div>;
+    return <div id="market">{<CryptoTable datas={cryptoData} />}</div>;
   }
 };
 
