@@ -1,6 +1,7 @@
 # Insight Market API
-### Link: <a href='https://joshjoshuap-insightmarketapi.vercel.app/'> joshjoshuap-insightmarketapi.vercel.app/ </a>
+<p> This is my personal project, an API based crypto prices. </p>
 
+### Link: <a href='https://joshjoshuap-insightmarketapi.vercel.app/'> joshjoshuap-insightmarketapi.vercel.app/ </a>
 ### Technolgies
 - HTML
 - Javascript
