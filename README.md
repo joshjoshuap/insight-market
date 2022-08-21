@@ -7,5 +7,5 @@
 - ReactJS
 - NextJS
 - Tailwind CSS
-- Coinlore API
-- Crypto Icons
+- <a href="https://www.coinlore.com/cryptocurrency-data-api"> Coinlore API </a>
+- <a href="http://cryptoicons.co/"> Crypto Icons </a>
