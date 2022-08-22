@@ -1,8 +1,9 @@
 import Image from 'next/image';
 
 const CryptoCoin = (info) => {
-  let icon = `https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/${info.symbol.toLowerCase()}.svg`;
+  let icon = `https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/svg/color/${info.symbol.toLowerCase()}.svg`; // set icon url with fetched symbol
 
+  // set color based on percent
   let change24h = info.percent_change_24h > 0 ? 'text-green' : 'text-red';
   let change7d = info.percent_change_7d > 0 ? 'text-green' : 'text-red';
 
@@ -39,7 +40,10 @@ const CryptoTable = (props) => {
           <th className="text-2xl text-center font-medium">Volume</th>
         </tr>
       </thead>
-      <tbody>{coin.map(CryptoCoin)}</tbody>
+      <tbody>
+        {/* Loop and Rendered Specific Crypto Coin */}
+        {coin.map(CryptoCoin)}
+        </tbody>
     </table>
   );
 };
