@@ -8,7 +8,7 @@ const Crypto = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('https://api.coinlore.net/api/tickers/');
+        const res = await fetch('https://api.coinlore.net/api/tickers/'); // fethcing coinlore api
         const data = await res.json();
         setCryptoData(data);
         setLoading(false);
@@ -23,6 +23,7 @@ const Crypto = () => {
   if (loading) {
     return <h1>Loading...</h1>; // display if fetch api not available or still fetching
   } else {
+    // render CryptoTable and pass fetched api through cryptoData
     return <div id="market">{<CryptoTable datas={cryptoData} />}</div>;
   }
 };
