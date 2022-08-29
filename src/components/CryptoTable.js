@@ -36,18 +36,18 @@ const CryptoCoin = (info) => {
       <td className='text-center py-4'>
         <Image className="bg-secondary rounded-circle" src={icon} width={40} height={40} alt="" />
       </td>
-      <td className='py-4'>
+      <td className='py-4 fw-semibold primary'>
         {info.name} : {info.symbol}
       </td>
-      <td className='py-4'>{info.price_usd}</td>
+      <td className='py-4 text-primary'><span className='fs-6'>$</span>{info.price_usd} </td>
       <td className='py-4'>{abbreviateNumber(Math.floor(volume24))}</td>
-      <td className={`py-4 ${change7d}`}>{info.percent_change_7d}</td>
-      <td className={`py-4 ${change24h}`}>{info.percent_change_24h}</td>
+      <td className={`py-4 ${change7d}`}>{info.percent_change_7d}<span className='fs-6'>%</span></td>
+      <td className={`py-4 ${change24h}`}>{info.percent_change_24h}<span className='fs-6'>%</span></td>
     </tr>
   );
 };
 
-const CryptoCard = (props) => {
+const CryptoTable = (props) => {
   let coin = props.datas.data;
   return (
     <table className="table table-borderless table-hover w-75 border border-25 border-dark border-rounded my-5 mx-auto">
@@ -57,8 +57,8 @@ const CryptoCard = (props) => {
           <th className='w-25'>Coin</th>
           <th>Price</th>
           <th>Volume</th>
-          <th>7d %</th>
-          <th>24h %</th>
+          <th>7d Change</th>
+          <th>24h Change</th>
         </tr>
       </thead>
       <tbody>{coin.map(CryptoCoin)}</tbody>
@@ -66,4 +66,4 @@ const CryptoCard = (props) => {
   );
 };
 
-export default CryptoCard;
+export default CryptoTable;
