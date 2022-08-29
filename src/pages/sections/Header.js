@@ -1,11 +1,11 @@
 const Header = () => {
   return (
-    <header className="text-center py-16 px-24">
+    <header className="bg-dark text-light text-center py-5">
       <div>
-        <h1 className="text-black text-5xl md:text-7xl underline font-semibold mb-8">Insight Market</h1>
-        <p className=" text-black text-xl mb-8">Market price of crypto exchange.</p>
+        <h1 className="display-1 fw-semibold">INSIGHT MARKET</h1>
+        <p className="fs-4">Market price of crypto exchange.</p>
         <a
-          className="text-xl font-medium border-2 rounded cursor-pointer p-2 hover:bg-black hover:text-white hover:border-black transition-all duration-300 ease-in"
+          className="btn btn-outline-light btn-lg border border-2"
           href="#market">
           View Market
         </a>
