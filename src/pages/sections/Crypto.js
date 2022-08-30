@@ -29,7 +29,11 @@ const Crypto = () => {
     );
 
   // render CryptoTable and pass fetched api through cryptoData
-  return <div id="market" className='py-3'>{<CryptoTable datas={cryptoData} />}</div>;
+  return (
+    <div id="market" className="py-3">
+      {<CryptoTable datas={cryptoData} />}
+    </div>
+  );
 };
 
 export default Crypto;

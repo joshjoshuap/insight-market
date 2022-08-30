@@ -32,17 +32,26 @@ const CryptoCoin = (info) => {
   let volume24 = info.volume24;
 
   return (
-    <tr className='fs-5'>
-      <td className='text-center py-4'>
+    <tr className="fs-5">
+      <td className="text-center py-4">
         <Image className="bg-secondary rounded-circle" src={icon} width={40} height={40} alt="" />
       </td>
-      <td className='py-4 fw-semibold primary'>
+      <td className="py-4 fw-semibold">
         {info.name} : {info.symbol}
       </td>
-      <td className='py-4 text-primary'><span className='fs-6'>$</span>{info.price_usd} </td>
-      <td className='py-4'>{abbreviateNumber(Math.floor(volume24))}</td>
-      <td className={`py-4 ${change7d}`}>{info.percent_change_7d}<span className='fs-6'>%</span></td>
-      <td className={`py-4 ${change24h}`}>{info.percent_change_24h}<span className='fs-6'>%</span></td>
+      <td className="text-primary py-4">
+        <span className="fs-6">$</span>
+        {info.price_usd}
+      </td>
+      <td className="text-center py-4">{abbreviateNumber(Math.floor(volume24))}</td>
+      <td className={`text-center py-4 ${change7d}`}>
+        {info.percent_change_7d}
+        <span className="fs-6">%</span>
+      </td>
+      <td className={`text-center py-4 ${change24h}`}>
+        {info.percent_change_24h}
+        <span className="fs-6">%</span>
+      </td>
     </tr>
   );
 };
@@ -50,15 +59,15 @@ const CryptoCoin = (info) => {
 const CryptoTable = (props) => {
   let coin = props.datas.data;
   return (
-    <table className="table table-borderless table-hover w-75 border border-25 border-dark border-rounded my-5 mx-auto">
+    <table className="table table-borderless table-hover w-75 border border-2 border-dark border-rounded my-5 mx-auto">
       <thead>
-        <tr className="bg-dark text-light fs-4">
+        <tr className="fs-4 border-bottom border-2 border-dark">
           <th></th>
-          <th className='w-25'>Coin</th>
+          <th className="w-25">Coin</th>
           <th>Price</th>
-          <th>Volume</th>
-          <th>7d Change</th>
-          <th>24h Change</th>
+          <th className="text-center">Volume</th>
+          <th className="text-center">7d Change</th>
+          <th className="text-center">24h Change</th>
         </tr>
       </thead>
       <tbody>{coin.map(CryptoCoin)}</tbody>
