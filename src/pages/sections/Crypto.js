@@ -20,12 +20,20 @@ const Crypto = () => {
     fetchData();
   }, []);
 
-  if (loading) {
-    return <h1>Loading...</h1>; // display if fetch api not available or still fetching
-  } else {
-    // render CryptoTable and pass fetched api through cryptoData
-    return <div id="market">{<CryptoTable datas={cryptoData} />}</div>;
-  }
+  // display if fetch api not available or still fetching
+  if (loading)
+    return (
+      <div id="market" className="spinner-border text-primary" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
+    );
+
+  // render CryptoTable and pass fetched api through cryptoData
+  return (
+    <div id="market" className="py-3">
+      {<CryptoTable datas={cryptoData} />}
+    </div>
+  );
 };
 
 export default Crypto;
