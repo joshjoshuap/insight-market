@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CryptoTable from '../../components/CryptoTable';
+import CryptoCard from '../../components/CryptoCard';
 
 const Crypto = () => {
   const [cryptoData, setCryptoData] = useState(null);
@@ -21,17 +21,12 @@ const Crypto = () => {
   }, []);
 
   // display if fetch api not available or still fetching
-  if (loading)
-    return (
-      <div id="market" className="spinner-border text-primary" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
-    );
+  if (loading) return <div className='text-red-600 text-center text-2xl font-bold'>Please Wait. Loading...</div>;
 
   // render CryptoTable and pass fetched api through cryptoData
   return (
-    <div id="market" className="py-3">
-      {<CryptoTable datas={cryptoData} />}
+    <div id="market" className="py-10">
+      {<CryptoCard datas={cryptoData} />}
     </div>
   );
 };
