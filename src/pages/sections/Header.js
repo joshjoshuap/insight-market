@@ -1,10 +1,10 @@
 const Header = () => {
   return (
-    <header className="bg-dark text-light text-center py-5">
-      <div>
-        <h1 className="display-1 fw-semibold">INSIGHT MARKET</h1>
-        <p className="fs-4">Market price of crypto exchange.</p>
-        <a className="btn btn-outline-light btn-lg border border-2" href="#market">
+    <header className="bg-cyan-700 py-16">
+      <div className="text-stone-50 text-center">
+        <h1 className="text-7xl underline mb-5">INSIGHT MARKET</h1>
+        <p className="text-2xl mb-10">Your market price for crypto.</p>
+        <a className="text-xl font-semibold border-2 rounded p-3 hover:bg-stone-50 hover:text-cyan-700 transition ease-in-out" href="#market">
           View Market
         </a>
       </div>
