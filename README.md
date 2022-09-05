@@ -7,6 +7,6 @@
 - Javascript
 - ReactJS
 - NextJS
-- Bootstrap 5
+- Tailwind CSS
 - <a href="https://www.coinlore.com/cryptocurrency-data-api"> Coinlore API </a>
 - <a href="http://cryptoicons.co/"> Crypto Icons </a>
