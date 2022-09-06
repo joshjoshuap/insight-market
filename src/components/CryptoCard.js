@@ -7,7 +7,7 @@ const CryptoCoin = (info) => {
   let change24h = info.percent_change_24h > 0 ? 'text-green-600' : 'text-red-600';
   let change7d = info.percent_change_7d > 0 ? 'text-green-600' : 'text-red-600';
 
-  // Volume Minimize
+  // volume minimize
   function abbreviateNumber(value) {
     var newValue = value;
     if (value >= 1000) {
@@ -32,11 +32,11 @@ const CryptoCoin = (info) => {
   let volume24 = info.volume24;
 
   return (
-    <div className="bg-neutral-100 text-neutral-900 shadow-lg rounded py-5 px-3">
+    <div className="bg-neutral-100 text-neutral-900 rounded py-5 px-3">
       <div className="flex items-center xl:px-5">
         <Image className="bg-stone-400 rounded-full" src={icon} width={40} height={40} alt="" />
         <p className="flex flex-col text-xl text-center font-semibold w-4/5 mx-auto">
-          <span className="text-md font-serif md:text-lg lg:text-xl">{info.name}</span>
+          <span className="text-md font-sans md:text-lg lg:text-xl">{info.name}</span>
           <span className="text-sm">({info.symbol})</span>
         </p>
       </div>
@@ -76,9 +76,10 @@ const CryptoCoin = (info) => {
 };
 
 const CryptoCard = (props) => {
-  let coin = props.datas.data;
+  let coin = props.datas.data; // pass the fetched props data
   return (
-    <div className="w-11/12 mx-auto grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+    <div className="grid grid-cols w-11/12 mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      {/* loop each coin into crypto card*/}
       {coin.map(CryptoCoin)}
     </div>
   );

@@ -7,10 +7,10 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Insight Market API | Joshua Pautanes </title>
 
-        <meta name="title" content="Insight Market API | Josh Josh" />
+        <meta name="title" content="Insight Market API | Joshua Pautanes" />
         <meta
           name="description"
-          content="My personal project, Its all about market price of crypto and currency exchange."
+          content="My personal project, Its all about market price of crypto."
         />
         <meta name="keywords" content="Insight Market API, joshjoshuap, Joshua Pautanes" />
         <meta name="author" content="Joshua Pautanes" />
