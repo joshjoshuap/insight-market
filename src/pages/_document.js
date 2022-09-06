@@ -14,7 +14,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap"
           rel="stylesheet"></link>
       </Head>
-      <body className='bg-white'>
+      <body className='bg-neutral-900'>
         <Main />
         <NextScript />
       </body>

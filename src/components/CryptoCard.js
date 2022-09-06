@@ -32,11 +32,12 @@ const CryptoCoin = (info) => {
   let volume24 = info.volume24;
 
   return (
-    <div className="border-cyan-700 border-2 rounded p-3">
+    <div className="bg-neutral-100 text-neutral-900 shadow-lg rounded py-5 px-3">
       <div className="flex items-center xl:px-5">
         <Image className="bg-stone-400 rounded-full" src={icon} width={40} height={40} alt="" />
         <p className="flex flex-col text-xl text-center font-semibold w-4/5 mx-auto">
-         <span className='text-md md:text-lg lg:text-xl'>{info.name}</span><span className='text-sm'>({info.symbol})</span>
+          <span className="text-md font-serif md:text-lg lg:text-xl">{info.name}</span>
+          <span className="text-sm">({info.symbol})</span>
         </p>
       </div>
 
