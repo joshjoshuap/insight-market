@@ -21,7 +21,7 @@ const Crypto = () => {
   }, []);
 
   // display if fetch api not available or still fetching
-  if (loading) return <div className='text-red-600 text-center text-2xl font-bold h-screen'>Please Wait. Loading...</div>;
+  if (loading) return <div className='text-red-600 text-center text-2xl font-bold'>Please Wait. Loading...</div>;
 
   // render CryptoCard and pass fetched api through cryptoData
   return (
