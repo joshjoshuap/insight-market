@@ -2,7 +2,7 @@ const Footer = () => {
   let year = new Date().getFullYear();
 
   return (
-    <footer className="bg-neutral-200 text-neutral-900 text-lg flex justify-center gap-5 py-2 ">
+    <footer className="bg-neutral-200 text-neutral-900 text-lg flex flex-wrap justify-center md:gap-3 lg:gap-5 py-2 ">
       <p>&copy; Copyright {year} </p>
       <p>
         <a
