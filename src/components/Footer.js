@@ -6,7 +6,7 @@ const Footer = () => {
       <p>&copy; Copyright {year} </p>
       <p>
         <a
-          href="https://joshjoshuap.vercel.app/"
+          href="https://www.joshjoshuap.site/"
           className="border-neutral-900 border-b-4 hover:border-blue-600 hover:text-blue-600 transition-all ease-in-out duration-500"
           target="_blank"
           rel="noreferrer">
