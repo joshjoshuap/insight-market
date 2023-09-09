@@ -2,7 +2,7 @@ import headingImage from "../assets/heading-image.png";
 
 export default function Heading() {
   return (
-    <heading className="flex flex-col items-center bg-gray text-white py-16">
+    <heading className="flex flex-col items-center text-white py-16">
       <h1 className="text-8xl text-heading font-vastShadow text-cyan mb-6">
         INSIGHT MARKET
       </h1>

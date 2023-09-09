@@ -1,7 +1,13 @@
+import Crypto from "./section/Crypto";
 import Heading from "./section/Heading";
 
 function App() {
-  return <Heading />;
+  return (
+    <>
+      <Heading />
+      <Crypto />
+    </>
+  );
 }
 
 export default App;
