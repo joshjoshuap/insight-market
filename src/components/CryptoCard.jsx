@@ -38,7 +38,7 @@ const CryptoCoin = (info) => {
   return (
     <div className="bg-black p-2 flex gap-2 rounded border-2 border-white">
       <div className="flex flex-col items-center  mx-auto p-2">
-        <h1 className="text-xl text-white font-bold font-josefinSans mb-2 flex items-center gap-2">
+        <h1 className="xl:text-xl text-white font-bold font-josefinSans mb-2 flex items-center gap-2">
           <img
             className="bg-stone-400 rounded-full"
             src={icon}
@@ -77,7 +77,7 @@ const CryptoCoin = (info) => {
 const CryptoCard = ({ datas }) => {
   console.log(datas);
   return (
-    <div className="grid grid-cols w-11/12 mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+    <div className="grid grid-cols-1 w-11/12 mx-auto sm:grid-cols-2 lg:grid-cols-4 gap-5">
       {/* loop each coin into crypto card*/}
       {datas.data.map(CryptoCoin)}
     </div>
